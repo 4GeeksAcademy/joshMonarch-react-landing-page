@@ -9,10 +9,24 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import Home from './components/Home';
+import Header from './components/Header';
+import Jumbotron from './components/Jumbotron';
+import Footer from './components/Footer';
+import CardsContainer from './components/CardsContainer';
+
+const content = () => {
+  return (
+    <div className='content'>
+      <Jumbotron/>
+      <CardsContainer/>
+    </div>
+  )
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
+    <React.StrictMode>
+      <Header/>
+      {content()}
+      <Footer/>
+    </React.StrictMode>
 )

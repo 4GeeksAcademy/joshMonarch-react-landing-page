@@ -1,18 +1,53 @@
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
-.tarea .borrar {
-  display: none;
+html {
+    font-size: clamp(1rem, 2vw, 3rem);
 }
 
-.tarea:hover .borrar {
-  display: inline;
+header {
+    height: 10vh;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.content {
+    position: relative;
+    top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.jumbotron {
+    background-color: lightgrey;
+}
+
+h1 {
+    font-size: 4em !important;
+    font-weight: 300;
+}
+
+.card {
+    width: 30%;
+}
+
+img {
+    width: 30vh !important;
+    height: 30vh !important;
+    object-fit: contain;
+}
+
+.card-body {
+    height: 40% !important;
+}
+
+.card-footer {
+    height: 10% !important;
+}
+
+footer {
+    position: relative;
+    height: 10vh;
+}
+
+@media (max-width: 425px) {
+  .card { width: 100% !important; }
 }
